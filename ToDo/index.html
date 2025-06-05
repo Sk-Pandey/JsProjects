@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=114426&format=png&color=000000" type="image/x-icon">
+</head>
+<body class="bg-amber-200 h-screen flex items-center justify-center">
+  
+  <section class="bg-white max-w-[540px] w-10/12 p-3 rounded-2xl">
+    <div id="heading" class="flex items-center mb-4">
+      <img src="https://img.icons8.com/?size=100&id=114426&format=png&color=000000" alt="Todo-logo">
+      <h1 class="text-[crimson] font-bold text-3xl ml-3">ToDo App</h1>
+    </div>
+    <div id="taskAdd" class="flex flex-col  sm:flex-row sm:bg-slate-200 p-3 sm:p-0 sm:max-w-[480px] mx-auto sm:mb-3 rounded-4xl">
+      <input type="text" placeholder="Write Your Task here............" id="input-box" class="bg-slate-200 border-2 outline-slate-900 border-slate-500 sm:border-none sm:outline-none p-3 rounded-4xl sm:flex-1/2">
+      <button onclick="addtask()" class="bg-[#f04366] text-white p-3 mt-2 sm:mt-0 sm:py-5 sm:px-12 rounded-4xl font-semibold cursor-pointer">Add</button>
+    </div>
+    <ul id="task-container" class="p-5 pt-0 max-h-[300px] min-h-[100px] overflow-auto overflow-x-hidden">
+      
+    </ul>
+    <div class="relative p-8"><div class="absolute right-0 bottom-1"><Strong class="text-[crimson]">Developed By- Shashikant Pandey</Strong></div></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

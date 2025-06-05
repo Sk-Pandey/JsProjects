@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="/PROJECTS/QuizApp/src/output.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=48277&format=png&color=000000" type="image/x-icon">
+</head>
+<body class="h-screen bg-gradient-to-r from-[#0f172a]  to-[#334155] grid  place-items-center">
+    <div class="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+        <div id="quiz-app" class="bg-white p-4 pb-8  max-w-[280px] sm:min-w-[580px] relative">
+        <h1 class="flex items-center  gap-2 text-blue-900 text-3xl font-bold md:text-4xl lg:text-5xl pb-4 border-b border-b-black"><img class="inline h-[42px] w-[42px]"
+             src="https://img.icons8.com/?size=100&id=48277&format=png&color=000000" alt="">Simple Quiz </h1>
+        <div id="quiz" class="py-4">
+            <h2 id="question" class="text-blue-900 text-xl font-semibold md:text-2xl lg:text-3xl">Question Goes Here</h2>
+            <div id="answers-btn">
+                <div class="btn">Option 1</div>
+                <div class="btn">Option 2</div>
+                <div class="btn">Option 3</div>
+                <div class="btn">Option 4</div>
+            </div>
+            
+        </div>
+        <button id="next-btn" class="bg-blue-600 px-4 py-2 font-semibold rounded-md mx-auto text-white hidden cursor-pointer">Next</button>
+        <strong class="hidden sm:block absolute right-5 bottom-2 text-gray-900">Developed by- <span class="bg-gradient-to-r from-pink-600 via-blue-400 to-rose-500 text-transparent bg-clip-text font-extrabold">Shashikant Pandey</span></strong>
+    </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

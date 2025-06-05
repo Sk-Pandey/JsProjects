@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.btn {
+  @apply font-semibold
+    hover:[&:not(:disabled)]:text-white
+    hover:[&:not(:disabled)]:bg-slate-800
+    rounded cursor-pointer border m-3 p-2
+    block w-11/12 text-start;
+}
+
+.correct{
+    @apply bg-green-400;
+}
+.incorrect{
+    @apply bg-red-400;
+}
