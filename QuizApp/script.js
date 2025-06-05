@@ -2,8 +2,8 @@ const questions = [
     {
         question: "If 1st January is Sunday, what day will be on 1st March (non-leap year)?",
         answers: [
-            { option: "Wednesday", correct: false },
-            { option: "Thursday", correct: true },
+            { option: "Wednesday", correct: true },  // ✅ fixed
+            { option: "Thursday", correct: false },
             { option: "Tuesday", correct: false },
             { option: "Friday", correct: false }
         ]
@@ -38,8 +38,8 @@ const questions = [
     {
         question: "How many days are there in 5 weeks and 3 days?",
         answers: [
-            { option: "38", correct: false },
-            { option: "36", correct: true },
+            { option: "38", correct: true },
+            { option: "36", correct: false },
             { option: "35", correct: false },
             { option: "33", correct: false }
         ]
@@ -65,9 +65,9 @@ const questions = [
     {
         question: "If 10th October 2020 was a Saturday, what day was 3rd October 2020?",
         answers: [
-            { option: "Friday", correct: true },
+            { option: "Friday", correct: false },
             { option: "Sunday", correct: false },
-            { option: "Saturday", correct: false },
+            { option: "Saturday", correct: true },  // ✅ fixed
             { option: "Monday", correct: false }
         ]
     },
