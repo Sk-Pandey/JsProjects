@@ -1,3 +1,4 @@
+let name = prompt("What is Your Name");
 const questions = [
     {
         question: "If 1st January is Sunday, what day will be on 1st March (non-leap year)?",
@@ -157,7 +158,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML=`Your Score is ${score} out Of ${questions.length}`
+    questionElement.innerHTML=`${name} Your Score is ${score} out Of ${questions.length}`
     NextButton.innerHTML="Play Agin";
     NextButton.classList.remove("hidden");
 }
