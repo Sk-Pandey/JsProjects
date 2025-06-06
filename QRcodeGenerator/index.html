@@ -10,9 +10,9 @@
   
   <section id="container" class="min-w-[280px] md:min-w-[380px] bg-white p-6 rounded-lg space-y-4">
     <h1 class="text-xl font-semibold">Enter Text or URL</h1>
-    <input id="QR_text" type="text" placeholder="Text or URL" class="border border-gray-500 p-2 rounded-md block w-full">
+    <input id="QR_text" type="text" autocomplete="off" placeholder="Text or URL" class="border outline-blue-400 border-gray-500 p-2 rounded-md block w-full">
     <div id="img_box" class="flex justify-center">
-      <img src="" id="QR_img" alt=""Enter Valid Detail>
+      <img src="" id="QR_img">
     </div>
     <button onclick="generateQR()" class="bg-blue-500 p-2 mt-4 w-full rounded-md text-white font-semibold mx-auto hover:cursor-pointer hover:bg-blue-600">Generate QR Code</button>
   </section>
@@ -23,7 +23,16 @@
     let QR_img= document.getElementById("QR_img");
     let QR_text=document.getElementById("QR_text")
     function generateQR(){
-      QR_img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+QR_text.value;
+      if(QR_text.value.length>0){
+        QR_img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+QR_text.value;
+      }else{
+        QR_text.classList.add("error");
+        setTimeout(()=>{
+          QR_text.classList.remove("error");
+        },1000);
+      }
+      
+      
     }
   </script>
 </body>
