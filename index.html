@@ -3,110 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+    <title>Shashikant Sir - Projects</title>
+    <link href="/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-slate-400 p-8">
-    <div
-      id="container"
-      class="grid text-xl text-white font-semibold place-items-center gap-8"
+  <body
+    class="min-h-screen flex flex-col bg-gradient-to-tr from-slate-100 via-indigo-100 to-purple-100 text-gray-800"
+  >
+    <!-- Header -->
+    <header
+      class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-6 shadow-lg text-center"
     >
-      <a href="/JsProjects/ToDo/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+      <h1 class="text-4xl font-bold">Shashikant Sir - My Projects</h1>
+      <p class="text-sm mt-1">
+        Explore all my cool and creative projects in one place
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 sm:p-10">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- 🟩 Project Card Template (Copy this to add more) -->
+        <a
+          href="/JsProjects/ToDo/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=HpGoNbsKfB5M&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">Todo App</h1>
-        </div>
-      </a>
-      <a href="/JsProjects/QuizApp/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
+            Todo App
+          </h2>
+          <p class="text-sm text-gray-600">
+             A minimal and efficient task manager where users can add, mark, and delete tasks to stay organized.
+          </p>
+        </a>
+
+        <!-- 🟩 Example Project -->
+        <a
+          href="/JsProjects/QuizApp/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=123740&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">Quiz App</h1>
-        </div>
-      </a>
-      <a href="/JsProjects/QRcodeGenerator/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
+            Quiz App
+          </h2>
+          <p class="text-sm text-gray-600">
+             A responsive quiz application that displays multiple-choice questions, tracks score, and gives instant feedback after submission.
+          </p>
+        </a>
+
+        <!-- 🟩 Add more cards below -->
+        <a
+          href="/JsProjects/QRcodeGenerator/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=43650&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">QR Code Generator</h1>
-        </div>
-      </a>
-      <a href="/JsProjects/PasswordGenerator/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
+            QR Code Generator
+          </h2>
+          <p class="text-sm text-gray-600">
+             Instantly creates QR codes from any text or URL input, allowing users to easily share links or information.
+          </p>
+        </a>
+        <a
+          href="/JsProjects/PasswordGenerator/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=44033&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
             Password Generator
-          </h1>
-        </div>
-      </a>
-      <a href="/JsProjects/ShowHideKey/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+          </h2>
+          <p class="text-sm text-gray-600">
+            Generates strong, random passwords based on selected criteria like
+            length, symbols, numbers, and uppercase letters.
+          </p>
+        </a>
+        <a
+          href="/JsProjects/PasswordStrength/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=49445&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">
-            Show Hide Key
-          </h1>
-        </div>
-      </a>
-      <a href="/JsProjects/PasswordStrength/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
-        >
-          <img
-            src="https://img.icons8.com/?size=100&id=42838&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
             Password Strength
-          </h1>
-        </div>
-      </a>
-      <a href="/JsProjects/DragDrop/index.html">
-        <div
-          id="project"
-          class="flex flex-col items-center justify-center rounded-full shadow-md bg-white min-w-[250px] min-h-[250px] shadow-black"
+          </h2>
+          <p class="text-sm text-gray-600">
+            Evaluates the strength of user-entered passwords in real-time using
+            rules for complexity, length, and variety of characters.
+          </p>
+        </a>
+        <a
+          href="/JsProjects/DragDrop/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
         >
-          <img
-            src="https://img.icons8.com/?size=100&id=WvPHQvQA8iBE&format=png&color=000000"
-            alt=""
-          />
-          <h1 class="text-center text-rose-500 font-bold">
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
             Drag Drop
-          </h1>
-        </div>
-      </a>
-    </div>
+          </h2>
+          <p class="text-sm text-gray-600">
+            A simple drag-and-drop interface that allows users to move items
+            between two containers using intuitive mouse controls.
+          </p>
+        </a>
+        <a
+          href="/JsProjects/ShowHideKey/index.html"
+          target="_blank"
+          class="group bg-white rounded-2xl border border-indigo-100 p-5 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <h2
+            class="text-xl font-semibold text-indigo-700 group-hover:text-indigo-900 mb-2"
+          >
+            Password Visibility
+          </h2>
+          <p class="text-sm text-gray-600">
+            A small utility that toggles password field visibility to enhance usability during form filling.
+
+
+          </p>
+        </a>
+        <!-- Just duplicate this card and update title/link/description -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-indigo-700 text-white text-center py-4 mt-10 shadow-inner"
+    >
+      &copy; 2025 Shashikant Sir. All rights reserved.
+    </footer>
   </body>
 </html>
