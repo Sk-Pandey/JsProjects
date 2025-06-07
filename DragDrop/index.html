@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="h-screen bg-indigo-950">
+    <div
+      id="container"
+      class="sm:h-screen flex flex-col sm:flex-row items-center justify-center gap-8"
+    >
+      <div
+        id="left"
+        class="w-[300px] h-[360px] border border-dashed border-white p-8 space-y-9"
+      >
+        <div class="dragList flex items-center text-white bg-[crimson] p-3 cursor-move selection:bg-transparent" draggable="true">
+          <i class="material-icons">drag_indicator</i>List Items 1
+        </div>
+        <div class="dragList flex items-center text-white bg-[crimson] p-3 cursor-move selection:bg-transparent" draggable="true">
+          <i class="material-icons">drag_indicator</i>List Items 2
+        </div>
+        <div class="dragList flex items-center text-white bg-[crimson] p-3 cursor-move selection:bg-transparent" draggable="true">
+          <i class="material-icons">drag_indicator</i>List Items 3
+        </div>
+        <div class="dragList flex items-center text-white bg-[crimson] p-3 cursor-move selection:bg-transparent" draggable="true">
+          <i class="material-icons">drag_indicator</i>List Items 4
+        </div>
+      </div>
+      <div
+        id="right"
+        class="w-[300px] h-[360px] border border-dashed border-white p-8 space-y-9"
+      ></div>
+    </div>
+
+    <script>
+        let lists = document.getElementsByClassName("dragList");
+        let rightBox = document.getElementById("right")
+        let leftBox = document.getElementById("left")
+
+        for (list of lists){
+            list.addEventListener("dragstart",function(e){
+                let selected = e.target;
+
+                rightBox.addEventListener("dragover",function(e){
+                    e.preventDefault();
+                });
+                rightBox.addEventListener("drop",function(e){
+                    rightBox.appendChild(selected);
+                    selected=null;
+                })
+                leftBox.addEventListener("dragover",function(e){
+                    e.preventDefault();
+                });
+                leftBox.addEventListener("drop",function(e){
+                    leftBox.appendChild(selected);
+                    selected=null;
+                })
+            })
+        }
+
+
+
+
+    </script>
+
+  </body>
+</html>
